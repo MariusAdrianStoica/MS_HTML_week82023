@@ -1,0 +1,62 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #5df321;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+*{margin: 1;
+    padding: 1;
+
+}
+
+body{
+    margin: 1cm;
+    padding: 0cm;
+/*background-image: url("./image/MicrosoftTeams-image.png");
+max-height: fit-content; */
+    
+}
+
+/*
+  *{
+    Margin:0;
+    Padding:0;
+  }
+
+  body{
+    Margin: 1px;
+    Padding:1px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 300px;
+    grid-gap: 10px;
+    background-color: #f321d4;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
